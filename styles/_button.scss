@@ -1,0 +1,62 @@
+
+.btn {
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1rem;
+    @media screen and ($medium-screen) {
+        font-size: 1.25rem;
+    }
+}
+.btn-group {
+    gap: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and ($medium-screen) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.btn-translucent {
+    width: 13rem;
+    min-width: max-content;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(237, 222, 191, 0.4),
+        rgba(137, 0, 8, 0.6)
+    );
+    &:hover {
+        background: linear-gradient(90deg, #eddebf, #890008);
+    }
+}
+.btn-bordered {
+    position: relative;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    -o-border-image: linear-gradient(
+            155deg,
+            rgba(237, 222, 191, 0.4),
+            rgba(25, 88, 125, 0.4)
+        )
+        1;
+    border-image: linear-gradient(
+            155deg,
+            rgba(237, 222, 191, 0.4),
+            rgba(25, 88, 125, 0.4)
+        )
+        1;
+    &:hover {
+        background: linear-gradient(
+        155deg,
+        rgba(237, 222, 191, 0.4),
+        rgba(25, 88, 125, 0.4)
+    );
+    }
+}

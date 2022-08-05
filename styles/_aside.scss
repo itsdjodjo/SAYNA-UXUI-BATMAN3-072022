@@ -1,0 +1,45 @@
+aside {
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    .container {
+        position: relative;
+    }
+    .networks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        transform: translate(50%, -50%);
+        gap: 1.5rem;
+        @media screen and ($large-screen) {
+            gap: 2rem;
+        }
+    }
+    .icon-aside {
+        max-width: 2.8rem;
+        img {
+            width: 100%;
+        }
+    }
+    .icon-large {
+        width: 2.8rem;
+        @media screen and ($medium-screen) {
+            width: 3.8rem;
+        }
+        @media screen and ($large-screen) {
+            width: 5rem;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
